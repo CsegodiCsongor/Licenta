@@ -1,0 +1,39 @@
+﻿<Window x:Class="LicentaPuzzlePirates.Windows.ChooseBoatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LicentaPuzzlePirates.Windows"
+        mc:Ignorable="d"
+        Title="ChooseBoatWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="#FFD45A15"/>
+                <GradientStop Color="#FFCBC217" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TitleBlock" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Margin="10" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="25" FontFamily="RowdyHeavy">Choose your boat !!!</TextBlock>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0" FontSize="14" FontFamily="RowdyHeavy">Hull Health</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="RowdyHeavy"> Sail Health</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="RowdyHeavy">Total Speed</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontFamily="RowdyHeavy">Total Deficit</TextBlock>
+
+        <StackPanel x:Name="BoatsPanel" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5" Margin="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></StackPanel>
+    </Grid>
+</Window>

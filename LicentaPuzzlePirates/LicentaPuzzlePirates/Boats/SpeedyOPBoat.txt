@@ -1,0 +1,2 @@
+﻿BasicSize|BasicHullHealth|BasicSailHealth|BasicHorizontalSpeed|BasicVerticalSpeed|SailHealthHorizonatlPercent|SailHealthVerticalPercent|FloodVerticalPercent|FloodHorizontalPercent|RigVerticalPercent|RigHorizontalPercent|RiggingDeficit|SailDeficit|FloodDeficit
+20|300|300|10|10|0|0|0|0|0|0|0|0|0
